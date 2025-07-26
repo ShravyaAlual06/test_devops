@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     "payroll",
     "widget_tweaks",
     "django_apscheduler",
+   "dynamic_fields".
 ]
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 
@@ -133,7 +134,6 @@ else:
             "PASSWORD": env("DB_PASSWORD", default=""),
             "HOST": env("DB_HOST", default=""),
             "PORT": env("DB_PORT", default=""),
-	    "dynamic_fields",
         }
     }
 
